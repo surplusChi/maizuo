@@ -6,7 +6,6 @@
               style="height: 200px; background-size: cover; background-position: center"
             ></div>
           </div>
-
         </film-swiper>
         <!-- 只有在vue中，组件上的class，style会自动传到组件的根节点上去 -->
         <film-header style="position:sticky;top:0px;background:#fff;z-index: 999;"></film-header>

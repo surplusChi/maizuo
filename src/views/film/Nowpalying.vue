@@ -14,7 +14,7 @@
                     <span class="name">{{data.name}}</span>
                     <span class="itme">{{data.filmType.name}}</span>
                 </h3>
-                <div class="grade">观众评分:{{data.grade}}</div>
+                <div class="grade">观众评分:<span>{{data.grade}}</span></div>
                 <div class="actors">主演:{{data.actors | actorsFilter}}</div>
                 <div class="nation">{{data.nation}} | {{data.runtime}}分钟</div>
                 <button disabled="true">购票</button>
@@ -113,14 +113,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
   .van-list{
     .van-cell{
       position: relative;
-      padding: 15px 0px 15px 20px;
+      left: 0px;
+      padding: 15px 15px 15px 20px;
       margin: 0px;
       overflow: hidden;
-      width: 380px;
-      height: 190px;
+      width: 100%;
+      height: 160px;
+      border-bottom: 1px solid #e4eaf1;
       .van-cell__value{
         position: relative;
         left: 0px;
@@ -131,7 +137,7 @@ export default {
       }
       img{
         float: left;
-        width: 100px;
+        width: 85px;
       }
       .name{
         font-size: 16px;
@@ -150,22 +156,22 @@ export default {
       }
       h3{
         position: absolute;
-        top: 20px;
-        left: 120px;
+        top: 5px;
+        left: 100px;
       }
       div{
-        font-size: 15px;
+        font-size: 13px;
         color: #797d82;
         position: absolute;
-        left: 120px;
+        left: 100px;
       }
       button{
         position: absolute;
         right: 0px;
-        top: 70px;
+        top: 55px;
         border: 1px solid #ff5f16;
         width: 50px;
-        height: 25px;
+        height: 28px;
         background: white;
         color: #ff5f16;
       }
@@ -175,13 +181,17 @@ export default {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    top: 85px;
-    width: 210px;
+    top: 62px;
+    width: 190px;
   }
   .grade{
-    top: 55px;
+    top: 35px;
+    span{
+      color: #ffb232;
+      font-size: 14px;
+    }
   }
   .nation{
-    top: 110px;
+    top: 90px;
   }
 </style>

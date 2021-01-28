@@ -1,7 +1,7 @@
 <template>
     <div>
-       login
-       <van-button type="primary">主要按钮</van-button>
+        请登录
+       <van-button type="primary" size="small">登录</van-button>
     </div>
 </template>
 

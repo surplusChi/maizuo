@@ -154,131 +154,129 @@ export default {
 <style lang="scss" scoped>
   #detali{
     background: #f7f8fa;
-  }
-  #fallback{
-    display: block;
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    width: 35px;
-    height: 35px;
-    z-index: 99;
-    background-color: white;
-    border-radius:50px;
-    opacity: 0.4;
-  }
-  .film-detali{
-    background: #fff;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    min-height: auto;
+    #fallback{
+      display: block;
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      width: 35px;
+      height: 35px;
+      z-index: 99;
+      background-color: white;
+      border-radius:50px;
+      opacity: 0.4;
+    }
+    .film-detali{
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      min-height: auto;
+      .filmname{
+        flex: 1;
+        .name{
+          color: #191a1b;
+          font-size: 18px;
+          height: 24px;
+          line-height: 24px;
+          margin-right: 7px;
+        }
+        .itme{
+          background-color: #d2d6dc;
+          height: 14px;
+          line-height: 14px;
+          padding: 0 2px;
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+    }
+    .grade{
+      position:absolute;
+      top: 215px;
+      right: 30px;
+      color: #ffb232;
+      font-size: 18px;
+    }
+    .category{
+      flex: 1;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #bcc5cf;
+    }
+    .premiereAt{
+      flex: 1;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #797d82;
+    }
+    .nation{
+      flex: 1;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #797d82;
+    }
+    .to{
+      flex: 1;
+      margin-top: 15px;
+      .synopsis{
+        font-size: 13px;
+        color: #797d82;
+        width: auto;
+        padding-right: 15px;
+      }
+    }
+    .detali-actors{
+      margin-top: 10px;
+      height: 250px;
+      background: #fff;
+      span{
+        padding-top: 5px;
+        text-align: center;
+        font-size: 12px;
+        color: #191a1b;
+        width: 85px;
+        height: auto;
+        display: block;
+      }
+    }
+    .detali-photos{
+      margin-top: 10px;
+      height: 250px;
+      background: #fff;
+      .photos-length{
+        position: absolute;
+        right: 15px;
+        top: 683px;
+        font-size: 13px;
+        color: #797d82;
+      }
+    }
+    .goSchedule{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      background-color: #ff5f16;
+      color: #fff;
+      font-size: 16px;
+      line-height: 50px;
+      z-index: 99;
+    }
   }
   .detalis{
     height: 170px;
-  }
-  .filmname{
-    flex: 1;
-  }
-  .name{
-    color: #191a1b;
-    font-size: 18px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 7px;
-  }
-  .itme{
-    background-color: #d2d6dc;
-    height: 14px;
-    line-height: 14px;
-    padding: 0 2px;
-    color: #fff;
-    font-size: 14px;
-  }
-  .grade{
-    position:absolute;
-    top: 215px;
-    right: 30px;
-    color: #ffb232;
-    font-size: 18px;
-  }
-  .category{
-    flex: 1;
-    margin-top: 12px;
-    font-size: 13px;
-    color: #bcc5cf;
-  }
-  .premiereAt{
-    flex: 1;
-    margin-top: 12px;
-    font-size: 13px;
-    color: #797d82;
-  }
-  .nation{
-    flex: 1;
-    margin-top: 12px;
-    font-size: 13px;
-    color: #797d82;
-  }
-  .to{
-    flex: 1;
-    margin-top: 15px;
-  }
-  .synopsis{
-    font-size: 13px;
-    color: #797d82;
-    width: auto;
-    padding-right: 15px;
   }
   .show{
     height: 35px;
     overflow: hidden;
   }
-
-  .detali-actors{
-    margin-top: 10px;
-    height: 250px;
-    background: #fff;
-    span{
-      padding-top: 5px;
-      text-align: center;
-      font-size: 12px;
-      color: #191a1b;
-      width: 85px;
-      height: auto;
-      display: block;
-    }
-  }
   .actors-photos{
     padding: 15px;
     color: #2c3e50;
     font-size: 17px;
-  }
-  .detali-photos{
-    margin-top: 10px;
-    height: 200px;
-    background: #fff;
-  }
-  .photos-length{
-    position: absolute;
-    right: 15px;
-    top: 683px;
-    font-size: 13px;
-    color: #797d82;
-  }
-
-  .goSchedule{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    background-color: #ff5f16;
-    color: #fff;
-    font-size: 16px;
-    line-height: 50px;
-    z-index: 99;
   }
 </style>

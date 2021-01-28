@@ -97,10 +97,12 @@ export default {
         position: relative; // 加一个相对定位，让滚动条的位置更合理
     }
     li{
+        border-bottom: 1px solid #e4eaf1;
+        display: flex;
         overflow: hidden;
         padding: 15px;
         height: 50px;
-        width: auto;
+        width: 100%;
         .cinema-info-lf{
             display: inline-block;
             left: 0px;
@@ -124,7 +126,8 @@ export default {
             }
         }
         .cinema-info-rt{
-            width: 64.4px;
+            width: auto;
+            padding-right: 10px;
             height: 50px;
             float: right;
             right: 0px;

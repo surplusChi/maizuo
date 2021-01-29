@@ -1,5 +1,5 @@
 <template>
-  <v-touch v-on:swiperight="onSwipeRight">
+  <!-- <v-touch v-on:swiperight="onSwipeRight"> -->
     <div>
         <van-search
             v-model="value"
@@ -20,7 +20,7 @@
             </li>
         </ul>
     </div>
-  </v-touch>
+  <!-- </v-touch> -->
 </template>
 
 <script>
@@ -28,8 +28,8 @@ import Vue from 'vue'
 import { Search } from 'vant' // 引入vant库的模糊查询组件
 import { mapActions, mapMutations, mapState } from 'vuex'
 
-import VueTouch from 'vue-touch' // 引入手势库
-Vue.use(VueTouch, { name: 'v-touch' })
+/* import VueTouch from 'vue-touch' // 引入手势库
+Vue.use(VueTouch, { name: 'v-touch' }) */
 
 Vue.use(Search) // 全局注册
 export default {
@@ -53,11 +53,11 @@ export default {
     handleBack () {
       // 路由方法：push增加新记录，back回退到上一个，replace替换当前记录
       this.$router.back()
-    },
-    onSwipeRight () {
-      console.log('right')
-      this.$router.back()
     }
+    /* onSwipeRight () {
+      // console.log('right')
+      this.$router.back()
+    } */
   },
   mounted () {
     // 进入搜索页面隐藏底部选项卡

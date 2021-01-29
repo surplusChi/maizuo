@@ -35,7 +35,7 @@ const routes = [
     ]
   },
   {
-    path: '/cinema',
+    path: '/cinema/',
     component: Cinema
   },
   {

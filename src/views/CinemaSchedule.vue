@@ -46,7 +46,7 @@ export default {
   },
   mounted () {
     http({
-      url: `/gateway/?cinemaId=${this.$route.params.cinemaId}&k=5979201`,
+      url: `/gateway/?cinemaId=${this.$route.params.cinemaId}&k=7154010`,
       headers: {
         'X-Host': 'mall.film-ticket.cinema.info'
       }
@@ -56,7 +56,7 @@ export default {
     })
 
     http({
-      url: `/gateway/?cinemaId=${this.$route.params.cinemaId}&k=734684`,
+      url: `/gateway/?cinemaId=${this.$route.params.cinemaId}&k=6568986`,
       headers: {
         'X-Host': 'mall.film-ticket.film.cinema-show-film'
       }

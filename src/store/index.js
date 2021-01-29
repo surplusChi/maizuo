@@ -3,12 +3,12 @@ import Vuex from 'vuex'
 import CityModule from './module/CityModule'
 import TabbarModule from './module/TabbarModule'
 import CinemaModule from './module/CinemaModule'
-/* import createPersistedState from 'vuex-persistedstate' */ // 引入vuex持久化模块
+import createPersistedState from 'vuex-persistedstate' // 引入vuex持久化模块
 Vue.use(Vuex)
 
 // 导出vuex.store，可以通过共享状态实现通信
 export default new Vuex.Store({
-  /* plugins: [createPersistedState()], */ // vuex的异步数据持久化
+  plugins: [createPersistedState()], // vuex的异步数据持久化
   // 存放共享状态
   state: {
   },

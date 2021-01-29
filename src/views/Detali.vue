@@ -1,5 +1,5 @@
 <template>
-    <v-touch v-on:swiperight="onSwipeRight">
+    <!-- <v-touch v-on:swiperight="onSwipeRight"> -->
       <div v-if="filminfo" id="detali">
         <span id="fallback" @click="handleFallback"><van-icon name="arrow-left" size="30" /></span>
         <detali-header v-top :title="filminfo.name">
@@ -48,9 +48,9 @@
           </detali-swiper>
         </div>
 
-        <div class="goSchedule">选座购票</div>
+        <div class="goSchedule" @click="handleCinema(filminfo.name)">选座购票</div>
       </div>
-    </v-touch>
+    <!-- </v-touch> -->
 </template>
 
 <script>
@@ -64,8 +64,8 @@ import detaliHeader from './detali/DetaliHeader'
 import { ImagePreview, Icon } from 'vant' // 引入vant组件库的图片预览的小插件和icon图标组件
 import { mapMutations } from 'vuex' // 映射方法，切割方饭
 
-import VueTouch from 'vue-touch' // 引入手势库
-Vue.use(VueTouch, { name: 'v-touch' })
+/* import VueTouch from 'vue-touch' */ // 引入手势库
+/* Vue.use(VueTouch, { name: 'v-touch' }) */
 Vue.use(Icon) // 将图标组件全局注册
 
 Vue.filter('dateFilter', (date) => {
@@ -112,10 +112,13 @@ export default {
         closeIconPosition: 'top-left' // 关闭按钮位置
       })
     },
-    onSwipeRight () {
-      console.log('right')
-      this.$router.back()
+    handleCinema (filmName) {
+      this.$router.push(`/cinema/${filmName}`)
     }
+    /* onSwipeRight () {
+      // console.log('right')
+      this.$router.back()
+    } */
   },
   components: {
     detaliSwiper, // 注册组件
@@ -264,7 +267,7 @@ export default {
       color: #fff;
       font-size: 16px;
       line-height: 50px;
-      z-index: 99;
+      z-index: 9999;
     }
   }
   .detalis{

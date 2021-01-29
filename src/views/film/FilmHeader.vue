@@ -39,7 +39,7 @@ export default {
       } else {
         this.isShow = false
       }
-      console.log(this.scrollY)
+      // console.log(this.scrollY)
     },
     handleClick () {
       // 点击切换城市按钮，清空cinemaList的缓存

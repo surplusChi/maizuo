@@ -43,6 +43,7 @@ Vue.directive('height', {
 export default {
   data () {
     return {
+      name: ''
     }
   },
   methods: {
@@ -63,6 +64,7 @@ export default {
     ...mapState('CityModule', ['cityId', 'cityName'])
   },
   mounted () {
+    this.name = this.$route.params.filmName
     // 影院列表数据，通过vuex的异步流程请求或者拿vuex的缓存数据
     if (this.cinemaList.length === 0) {
       // vuex 异步流程

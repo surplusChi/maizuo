@@ -11,10 +11,12 @@ import Swiper from 'swiper/bundle' // 这只引入了swiper.js文件
 import 'swiper/swiper-bundle.min.css'
 export default {
   mounted () {
-    new Swiper('.swiper-container', {
-      slidesPerView: 3, // 页面显示多个
-      spaceBetween: 60, // 每个元素直接的距离
-      centeredSlides: true
+    this.$nextTick(() => {
+      new Swiper('.swiper-container', {
+        slidesPerView: 2, // 页面显示多个
+        spaceBetween: 100, // 每个元素直接的距离
+        centeredSlides: true
+      })
     })
   }
 }

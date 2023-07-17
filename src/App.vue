@@ -17,7 +17,7 @@ import tabbar from './components/Tabbar' // 导入tabbar组件
 export default {
   data () {
     return {
-      // 测试链接远程仓库
+      // 测试链接远程仓库0926（更新）
     }
   },
   components: {
